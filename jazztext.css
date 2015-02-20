@@ -1,13 +1,12 @@
 @font-face {
+    font-family: Jazztext;
     font-face-name: 'Jazztext';
-    src: url('JAZZTEXT.TTF') format('truetype');
+    src: url(JAZZTEXT.TTF);
 }
 
 html{
     height: 100%;
     background-size: cover;
-    <!--background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), url('Jazz-Sheet-Music-Page-420.png'), radial-gradient(rgba(255,255,255,1), rgba(0, 0, 0, 1));-->
-    background: radial-gradient(rgba(255,255,255,1), rgba(0, 0, 0, 1));
     background-position: center top;
     background-repeat: no-repeat;
     background-color: rgb(252,236,200);
@@ -24,114 +23,154 @@ body {
 #bag{
     position: relative;
 }
+#bag2{
+    position: relative;
+}
+
+.overhead{
+    font-size: 32pt;
+    font-style: italic;
+    margin-bottom: 8%;
+    position: relative;
+}
 
 #chapter{
-    margin-left: 15%;
-    margin-right: 15%;
+    font-style: normal;
+}
 
+#eb{
+    left: 3%;
+    position: absolute;
+}
+
+#ab{
+    left: 28%;
+    position: absolute;
+}
+
+#C{
+    left: 53%;
+    position: absolute;
+}
+
+#F{
+    left: 78%;
+    position: absolute;
 }
 
 
+
 .notes div{
-    font-size: 16pt;
+    font-size: 58pt;
     position: absolute;
     z-index: 1;
 }
 
 #note1{
     left: 2.125%;
+    top:50%;
 }
-#note1:hover{
-    left: 2.125%;
-}
+
 #note2{
-    top: -30%;
-    left: 6.125%;
+    top: 30%;
+    left: 10.125%;
 }
 #note3{
-    top: -50%;
-    left: 10.125%;
+    top: 0%;
+    left: 18.125%;
 
 }
 #note4{
-    left: 14.125%;
+    left: 26.125%;
     top: -40%;
 }
 
 #note5{
-    left: 16%;
+    left: 30%;
 }
 
 #note6{
-    left: 20.125%;
+    left: 38.125%;
 }
 
 #note7{
-    left: 24.125%;
-    top: -15%;
+    left: 46.125%;
+    top: 8%;
 }
 
 #note8{
-    left: 28.125%;
+    left: 54.125%;
+    top: 20%;
 }
 #note9{
-    left: 32.125%;
-    top: -35%;
+    left: 62.125%;
+    top: 35%;
 }
 #note10{
-    left: 36.125%;
-    top: -80%;
+    left: 70.125%;
+    top: 10%;
     height: 4.25%;
 
 }
 #note11{
-    left: 40.125%;
-    top: -67%;
+    left: 78.125%;
+    top: -25%;
 }
 #note12{
-    left: 44.125%;
-    top: -22%;
+    left: 86.125%;
+    top: 0%;
 }
 #note13{
-    left: 48.125%;
-    top: -22%;
+    left: 94.125%;
+    top: 0%;
 }
 #note14{
-    left: 52.125%;
-    top: -60%;
+    left: 2.125%;
+    top: -42%;
 }
 #note15{
-    left: 56.125%;
+    left: 10.125%;
+    top: 20%;
 }
 #note16{
-    left: 60.125%;
+    left: 18.125%;
+    top: 10%;
 }
 #note17{
-    left: 64.125%;
-    top: 30%;
+    left: 26.125%;
+    top: -10%;
 }
 #note18{
-    left: 68.125%;
+    left: 34.125%;
     top: 50%;
 }
 #note19{
-    left: 72.125%;
-    top: 10%;
+    left: 42.125%;
+    top: 16%;
 }
 #note20{
-    left: 76.125%;
-    top: -38%;
+    left: 50.125%;
+    top: -42%;
 }
 #note21{
-    left: 80.125%;
+    left: 58.125%;
+    top: 10%;
 }
 #note22{
-    left: 84.125%;
-    top: -80%;
+    left: 66.125%;
+    top: -25%;
 }
 #note23{
-    left: 88.125%;
-    top: -20%;
+    left: 74.125%;
+    top: 25%;
+}
+#note24{
+    left: 82.125%;
+    top: 0%;
+}
+#note25{
+    left: 90.125%;
+    top: 0%;
 }
 
 
@@ -143,15 +182,16 @@ body {
 }
 
 .lines{
-    border: solid 1px;
+    border: solid 2px;
     position: relative;
     z-index: 0;
 }
 
 
 .lines div{
-    padding-top: 5px;
-    border-top: solid 1px;
+
+    margin-top: 3%;
+    border-top: solid 2px;
     position: relative;
 
 }
@@ -160,12 +200,79 @@ body {
     border-top: 0;
 }
 
+#bottomline{
+    border-top: 0;
+}
+
+.gap{
+    display: block;
+    height: 1000px;
+    max-height: 70px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+    position: relative;
+}
+
+.gap div{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    display: none;
+    font-size: 36pt;
+}
+
+.gap h1 h2 h3{
+    width: 10%;
+    position: inherit;
+    z-index: -1;
+}
+
+#heading1{
+    float:left;
+}
+
+#heading2{
+    float:right;
+}
+
+
+.lines2{
+    border: solid 2px;
+    position: relative;
+    z-index: 0;
+}
+
+
+.lines2 div{
+
+    margin-top: 3%;
+    border-top: solid 2px;
+    position: relative;
+
+}
+
+#topline2{
+    border-top: 0;
+}
+
+#bottomline2{
+    border-top: 0;
+}
+
+.container{
+
+}
+
 #text1{
     font-size: 16pt;
     position: relative;
     margin-left: 30%;
     margin-right: 30%;
     text-align: center;
+    font-style: italic;
+
+
 }
 
 #text2{
@@ -174,21 +281,11 @@ body {
     margin-left: 30%;
     margin-right: 30%;
     text-align: center;
-    margin-top: 5%;
+    font-weight: bold;
+
+
 }
 
-#heading1{
-    position: relative;
-    text-align: left;
-}
-#heading2{
-    position: relative;
-    text-align: left;
-}
-#heading2{
-    position: relative;
-    text-align: left;
-}
 
 .element-animation:hover{
     animation: animationFrames linear 1s;
